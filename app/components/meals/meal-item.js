@@ -20,8 +20,8 @@ export default function MealItem({ title, slug, image, summary, creator }) {
         <p className={classes.summary}>{summary}</p>
         <div className={classes.actions}>
           <Link href={`/meals/${slug}`}>View Details</Link>
-          <DeleteMeal slug={slug} />
         </div>
+        {/* <DeleteMeal title={`/${title}`} /> */}
       </div>
     </article>
   );
